@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="style.css">
 	<!--Import Javascript modernizer for older IE browsers-->
 	<script src="modernizr.custom.05819.js"></script>
+	<script src="main.js"></script>
 </head>
 
 <body>
@@ -25,26 +26,37 @@
 		<!--This wrapper class centers the content on the page-->
 		<div id="wrapper">
 			<h1 class="centerhv">Japan</h1>
-			<!--(Will fix this later when i have time) <div class="imagegrid3">
-				<ul>
-					<li><img src="img/Tokyo/img grid/Rainbow Bridge.jpg" alt="Helicopter view of tokyo at night"> </li>
-					<li><img src="img/Tokyo/img grid/Sensoji.jpg" alt="Sensoji temple at night"> </li>
-					<li><img src="img/Tokyo/img grid/City.jpg" alt="Helicopter view of tokyo at night"> </li>
-				</ul>-->
 			<div>
 				<img class="centerhv" src="img/Osaka night 2.jpg" alt="View of tokyo at night from rooftop" height="45%" width="45%" >
 			
-				<p>Introduction to Japan. Introduction to Japan. Introduction to Japan. Introduction to Japan. Introduction to Japan. Introduction to Japan. Introduction to Japan. Introduction to Japan. Introduction to Japan. Introduction to Japan. Introduction to Japan. Introduction to Japan. Introduction to Japan. Introduction to Japan. Introduction to Japan. Introduction to Japan. Introduction to Japan. Introduction to Japan. Introduction to Japan. Introduction to Japan. Introduction to Japan. Introduction to Japan. Introduction to Japan. Introduction to Japan. Introduction to Japan. Introduction to Japan. Introduction to Japan. Introduction to Japan. Introduction to Japan. Introduction to Japan. Introduction to Japan. Introduction to Japan. Introduction to Japan. Introduction to Japan. Introduction to Japan. Introduction to Japan. Introduction to Japan. Introduction to Japan. Introduction to Japan. Introduction to Japan. Introduction to Japan. Introduction to Japan. Introduction to Japan. Introduction to Japan. Introduction to Japan. Introduction to Japan. Introduction to Japan. Introduction to Japan. Introduction to Japan. Introduction to Japan. Introduction to Japan. Introduction to Japan. Introduction to Japan. Introduction to Japan. Introduction to Japan. </p>
+				<p>Japan is one of the greatest countries to make memories and explore culture. Whether you want to explore the night life of Akihabara, or find your spirituality at Fushimi Inari shrine, you're sure to have a great time. </p>
 				<!--UL are specified to be center aligned if you want to change that please make a specific class or id for your UL-->
-				<ul>
-					<li>Population</li>
-					<li>Fact 2</li>
-					<li>Fact 3</li>
-					<li>Fact 4</li>
+				<ul class='facts'>
+					<li>127 million people live in Japan</li>
+					<br>
+					<li>Japan consists of 6,852 islands</li>
+					<br>
+					<li>Japan will host the 2020 Olympics</li>
+					<br>
+					<li>Japan is known as Nihon or Nippon which translates as "Land of the rising sun" It was long ago believed that Japan was the first country to see the sun rise every day.</li>
 				</ul>
+				
+			</div>
+			<div class="centerhv" id="costestimator">
+				<!--Cost calculator-->
+				<h3>Japan Cost Estimator</h3>
+				<p class="centerhv">Number of people traveling</p>
+				<input type="text" id="numPeople" class="" >	<br>
+				<p class="centerhv">Number of days you will be staying</p>
+				<input type="text" id="numDays" class=""><br><br>
+			
+				<button onclick="calc();" class="">Calculate</button><br>
+			
+				<p id="result" class="centerhv"></p>
 				
 			</div>
 		</div>
 	</main>
+	
 </body>
 </html>

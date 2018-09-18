@@ -40,7 +40,7 @@ nav{
 	background-color: #f4f4f4;
 	border-bottom: 1px;
 	border-style: solid;
-	border-color: #ccc;
+	border-color: #950002;
 }
 nav li{
 	/*Allows nav elements to sit side by side*/
@@ -70,6 +70,11 @@ h2 {
 	padding-top: 0.5em;
 	padding-bottom: 0.5em;
 	
+}
+h3 {
+	font-size: 2.25em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
 }
 div {
 	display: table;
@@ -134,10 +139,34 @@ footer p{
 	margin: 0.25%;
 
 }
+.facts{
+	/*border-top: 3px;
+	border-bottom: 3px;
+	border-style: solid;
+	border-color: #813637;
+	
+	padding-top: 1em;
+	padding-bottom: 1em;
+	
+	margin-top: 1em;
+	margin-bottom: 1em;*/
+}
 /*"Wraps" web page content and centers it, width can be configured as needed*/
 #wrapper{
 	margin: 0 auto;
 	min-width: 300px;
 	background-color: #f4f4f4;
 	width: 60%;
+}
+#costestimator{
+	border-top: 3px;
+	margin-top: 2em;
+	padding-top: 1em;
+	border-color: #813637;
+
+	border-style: solid;
+}
+#result{
+	font-size: 1.5em;
+	color: #813637; 
 }

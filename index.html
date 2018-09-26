@@ -45,11 +45,24 @@
 			<div class="centerhv" id="costestimator">
 				<!--Cost calculator-->
 				<h3>Japan Cost Estimator</h3>
+
 				<p class="centerhv">Number of people traveling</p>
-				<input type="text" id="numPeople" class="" >	<br>
+					<img src="img/person.png" id="person1" height="5%" width="5%" onClick="ImgNumPeople(1)">
+					<img src="img/person.png" id="person2" height="5%" width="5%" onClick="ImgNumPeople(2)">
+					<img src="img/person.png" id="person3" height="5%" width="5%" onClick="ImgNumPeople(3)">
+				<br>
+				<input type="text" id="numPeople" class="" > 
+				<br>
 				<p class="centerhv">Number of days you will be staying</p>
 				<input type="text" id="numDays" class=""><br><br>
-			
+				<p class="centerhv">Food Budget</p>
+				 <form>
+  					<input type="radio" name="Food Budget" value="male" checked id="foodBudget1"> $0-50 <br>
+  					<input type="radio" name="Food Budget" value="female" id="foodBudget2"> $50-100<br>
+ 					 <input type="radio" name="Food Budget" value="other" id="foodBudget3"> $100+ <br>
+				</form> 
+				<br>
+				
 				<button onclick="calc();" class="">Calculate</button><br>
 			
 				<p id="result" class="centerhv"></p>
@@ -57,6 +70,10 @@
 			</div>
 		</div>
 	</main>
-	
+	<footer>
+		Copyright © Tyler Dupont | Travel Japan
+		<br>
+		<a href="mailto:tyler@dupont.com">tyleredupont@gmail.com</a>
+	</footer>
 </body>
 </html>

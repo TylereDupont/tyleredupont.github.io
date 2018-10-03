@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Explore Tokyo</title>
+	<link rel="stylesheet" href="style.css">
+	<!--Import Javascript modernizer for older IE browsers-->
+	<script src="modernizr.custom.05819.js"></script>
+	<script src="main.js"></script>
+</head>
+
+<body>
+	<!--Header Image-->
+	<img src="img/Skyline.jpg" width="100%" height="25em" class="topimg">
+	<!--Navigation area-->
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="tokyo.html">Tokyo</a></li>
+			<li><a href="kyoto.html">Kyoto</a></li>
+			<li><a href="osaka.html">Osaka</a></li>
+			<li><a href="hiroshima.html">Hiroshima</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+	<main>
+		<!--This wrapper class centers the content on the page-->
+		<div id="wrapper">
+			<h1 class="centerhv">Contact Us</h1>
+			<!--Contact Form, uses javascript for exception handling-->
+				<form>
+			
+			
+				</form>
+			<div class="centerhv" id="costestimator">
+				<!--Cost calculator-->
+				<h3>Japan Cost Estimator</h3>
+
+				<p class="centerhv">Number of people traveling</p>
+					<img src="img/person.png" id="person1" height="5%" width="5%" onClick="ImgNumPeople(1)">
+					<img src="img/person.png" id="person2" height="5%" width="5%" onClick="ImgNumPeople(2)">
+					<img src="img/person.png" id="person3" height="5%" width="5%" onClick="ImgNumPeople(3)">
+				<br>
+				<input type="text" id="numPeople" class="" > 
+				<br>
+				<p class="centerhv">Number of days you will be staying</p>
+				<input type="text" id="numDays" class=""><br><br>
+				<p class="centerhv">Food Budget</p>
+				 <form>
+  					<input type="radio" name="Food Budget" value="male" checked id="foodBudget1"> $0-50 <br>
+  					<input type="radio" name="Food Budget" value="female" id="foodBudget2"> $50-100<br>
+ 					 <input type="radio" name="Food Budget" value="other" id="foodBudget3"> $100+ <br>
+				</form> 
+				<br>
+				
+				<button onclick="calc();" class="">Calculate</button><br>
+			
+				<p id="result" class="centerhv"></p>
+				
+			</div>
+		</div>
+	</main>
+	<footer>
+		Copyright © Tyler Dupont | Travel Japan
+		<br>
+		<a href="mailto:tyler@dupont.com">tyleredupont@gmail.com</a>
+	</footer>
+</body>
+</html>

@@ -20,6 +20,7 @@
 			<li><a href="kyoto.html">Kyoto</a></li>
 			<li><a href="osaka.html">Osaka</a></li>
 			<li><a href="hiroshima.html">Hiroshima</a></li>
+			<li><a href="contact.html">Contact</a></li>
 		</ul>
 	</nav>
 	<main>
@@ -45,27 +46,39 @@
 			<div class="centerhv" id="costestimator">
 				<!--Cost calculator-->
 				<h3>Japan Cost Estimator</h3>
-
-				<p class="centerhv">Number of people traveling</p>
-					<img src="img/person.png" id="person1" height="5%" width="5%" onClick="ImgNumPeople(1)">
-					<img src="img/person.png" id="person2" height="5%" width="5%" onClick="ImgNumPeople(2)">
-					<img src="img/person.png" id="person3" height="5%" width="5%" onClick="ImgNumPeople(3)">
-				<br>
-				<input type="text" id="numPeople" class="" > 
-				<br>
-				<p class="centerhv">Number of days you will be staying</p>
-				<input type="text" id="numDays" class=""><br><br>
-				<p class="centerhv">Food Budget</p>
-				 <form>
-  					<input type="radio" name="Food Budget" value="male" checked id="foodBudget1"> $0-50 <br>
-  					<input type="radio" name="Food Budget" value="female" id="foodBudget2"> $50-100<br>
- 					 <input type="radio" name="Food Budget" value="other" id="foodBudget3"> $100+ <br>
-				</form> 
-				<br>
 				
-				<button onclick="calc();" class="">Calculate</button><br>
-			
-				<p id="result" class="centerhv"></p>
+					<p class="centerhv">Number of people traveling</p>
+						<form>
+							<input type="text" id="numPeople" class="" > 
+						</form>
+					
+					<br>
+					
+					<p class="centerhv">Number of days you will be staying</p>
+						<form>
+						<input type="text" id="numDays" class="">
+						</form>
+				
+					<br><br>
+				
+					<p class="centerhv">Food Budget</p>
+						<form>
+  							<input type="radio" name="Food Budget" value="male" checked id="foodBudget1"> $0-50 <br>
+  							<input type="radio" name="Food Budget" value="female" id="foodBudget2"> $50-100<br>
+ 						 	<input type="radio" name="Food Budget" value="other" id="foodBudget3"> $100+ <br>
+							<br>
+						</form>
+					<!--Airline & Income Section-->
+					<p class="centerhv">Please enter your monthly salary (optional)</p>
+						<form>
+							<input type="text" id="salary" class="">
+							<br><br>
+						</form>
+					<!--Submit Button-->
+					<button onclick="calc();" class="">Calculate</button><br>
+					
+					<p id="result" class="centerhv"></p>
+					<p id="airlineResult" class="centerhv"></p>
 				
 			</div>
 		</div>
@@ -77,3 +90,4 @@
 	</footer>
 </body>
 </html>
+<!--For the purpose of debugging, I decided to add a new feature to my website cost calculator which will take an optional salary input and change a <p>.innerhtml element to “recommend” an airline to the user. I predefined 3 separate categories in which the user could be classified (Budget tier, Medium tier, First class Tier.)I encountered my first problem when I wrote an error where the program was not properly grabbing the salary from my html (Html line 81, JS line 38.) To solve this, I first added a console.log method to print the salary variable to the console. When I ran the program my salary was printed as 3 which was very interesting, but it also immediately gave away the error in my program. The issue was that I had copy and pasted “document.getElementById('result')”  and did not change the arguments to ‘salary’, which I was then able to fix easily. I also added a window.alert function on line 48 of the JS to inform the user if they have entered an invalid number for salary (For example, -50.) I also added a few more window.alert methods, and console.log methods within the JS to demonstrate my knowledge of this concept. -->

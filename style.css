@@ -76,6 +76,16 @@ h3 {
 	padding-top: 0.5em;
 	padding-bottom: 0.5em;
 }
+h4 {
+	font-size: 1.75em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+h5 {
+	font-size: 1.25em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
 div {
 	display: table;
 	margin-left: auto;
@@ -151,6 +161,11 @@ footer p{
 	margin-top: 1em;
 	margin-bottom: 1em;*/
 }
+.biglink{
+	font-size: 1.25em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
 /*"Wraps" web page content and centers it, width can be configured as needed*/
 #wrapper{
 	margin: 0 auto;
@@ -169,4 +184,10 @@ footer p{
 #result{
 	font-size: 1.5em;
 	color: #813637; 
+}
+#staysafelist{
+	
+}
+#staysafelist ul{
+	text-decoration: 
 }

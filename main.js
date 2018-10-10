@@ -69,3 +69,24 @@ window.alert("The program has selected the First Class tier");
 				}
 		}
 }
+
+gatherInfo();
+//This function shows the user specifications on their system.
+function gatherInfo()
+{
+	//Declare variables
+	var heightP = document.getElementById('height');
+	var widthP = document.getElementById('width');
+	var appnameP = document.getElementById('appname');
+	var appversionP = document.getElementById('appversion');
+	var onlineP = document.getElementById('online');
+	var platformP = document.getElementById('platform');
+	
+	
+	heightP.innerHTML = "Your Screen Height is " + screen.height;
+	widthP.innerHTML = "Your Screen Width is " + screen.width;
+	appnameP.innerHTML = "Your web browser is " + navigator.appName;
+	appversionP.innerHTML = "Your browser version is " + navigator.appVersion;
+	onlineP.innerHTML = "Are you currently connected to the internet? " + navigator.onLine;
+	platformP.innerHTML = "Your operating system is " + navigator.platform;
+}

@@ -1,5 +1,8 @@
 // JavaScript Document
 
+//Global Variables
+var formValid = true;
+
 function calc()
 {
 	//declare required variables
@@ -68,4 +71,53 @@ window.alert("The program has selected the First Class tier");
 					airlineResult.innerHTML = "We recommend Emirates or Etihad Airways for your travel.";
 				}
 		}
+}
+
+gatherInfo();
+//This function shows the user specifications on their system.
+function gatherInfo()
+{
+	//Declare variables
+	var heightP = document.getElementById('height');
+	var widthP = document.getElementById('width');
+	var appnameP = document.getElementById('appname');
+	var appversionP = document.getElementById('appversion');
+	var onlineP = document.getElementById('online');
+	var platformP = document.getElementById('platform');
+	
+	
+	heightP.innerHTML = "Your Screen Height is " + screen.height;
+	widthP.innerHTML = "Your Screen Width is " + screen.width;
+	appnameP.innerHTML = "Your web browser is " + navigator.appName;
+	appversionP.innerHTML = "Your browser version is " + navigator.appVersion;
+	onlineP.innerHTML = "Are you currently connected to the internet? " + navigator.onLine;
+	platformP.innerHTML = "Your operating system is " + navigator.platform;
+}
+//Validate the form
+function validateForm ()
+{
+	var errorMessage = "";
+	var errorP = document.getElementById("errorText");
+	var form = document.getElementById("form");
+	var formValid = true;
+
+
+	if (document.getElementById("name").value === "" || document.getElementById("name").value === null) {		
+		errorMessage += "please input your full name "
+		formValid = false;
+	}
+	if (document.getElementById("email").value === "" || document.getElementById("email").value === null) {
+		errorMessage += "please input your email address"
+		formValid = false;
+	}
+
+	if (formValid === true) {
+		errorP.innerHTML = "";
+		errorP.style.display = "none";
+		form.submit();
+	} else {
+		errorP.innerHTML = errorMessage;
+		errorP.style.display = "block";
+		scroll (0,0);
+	}
 }

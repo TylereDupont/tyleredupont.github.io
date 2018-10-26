@@ -166,12 +166,12 @@ footer p{
 	padding-top: 0.5em;
 	padding-bottom: 0.5em;
 }
-<<<<<<< HEAD
 #errorText {
 	color: red;
 }
-=======
->>>>>>> dbad06549e1d6fba91340db9aa7f5b2e668923f2
+#output {
+	color: blue;
+}
 /*"Wraps" web page content and centers it, width can be configured as needed*/
 #wrapper{
 	margin: 0 auto;

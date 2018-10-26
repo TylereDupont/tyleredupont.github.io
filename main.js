@@ -92,7 +92,6 @@ function gatherInfo()
 	appversionP.innerHTML = "Your browser version is " + navigator.appVersion;
 	onlineP.innerHTML = "Are you currently connected to the internet? " + navigator.onLine;
 	platformP.innerHTML = "Your operating system is " + navigator.platform;
-<<<<<<< HEAD
 }
 //Validate the form
 function validateForm ()
@@ -121,6 +120,4 @@ function validateForm ()
 		errorP.style.display = "block";
 		scroll (0,0);
 	}
-=======
->>>>>>> dbad06549e1d6fba91340db9aa7f5b2e668923f2
 }

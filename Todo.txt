@@ -1,0 +1,2 @@
+Change the button on index from having a large padding, to haveong a large margin. as is,
+the button has a huge hit box for where you can click, I want it to be just the arrow area

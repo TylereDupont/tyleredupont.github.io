@@ -34,6 +34,9 @@ a:hover{
 h1{
 	font-size: 3.5em;
 }
+h3 {
+	font-size: 3em;
+}
 section{
 	padding-bottom: 7.5em;
 }
@@ -153,4 +156,8 @@ color: white;
 }
 .item{
 	
+}
+.grid3 img{
+	float: left;
+	display: table;
 }

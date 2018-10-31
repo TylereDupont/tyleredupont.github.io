@@ -82,6 +82,9 @@ footer{
 footer a{
 	color: #ffffff;
 }
+canvas {
+	background: #eee; display: block; margin: 0 auto;
+}
 #header{
 	text-align: center;
 	color: white;
@@ -148,10 +151,6 @@ color: white;
 .contact{
 	background-color: #c6373a;
 	padding: 0.5em;
-}
-.grid3 img{
-	float: left;
-	display: table;
 }
 .grid3 img{
 	float: left;

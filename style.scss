@@ -34,9 +34,6 @@ a:hover{
 h1{
 	font-size: 3.5em;
 }
-h2 {
-	font-size: 3.25em;
-}
 h3 {
 	font-size: 3em;
 }
@@ -81,13 +78,9 @@ footer{
 	padding: 10px 0px;
 	color: white;
 	margin: 0;
-	margin-top: 5em;
 }
 footer a{
 	color: #ffffff;
-}
-canvas {
-	background: #eee; display: block; margin: 0 auto;
 }
 #header{
 	text-align: center;
@@ -156,34 +149,7 @@ color: white;
 	background-color: #c6373a;
 	padding: 0.5em;
 }
-.shopping-list-item{
-	float: none;
-}
-.shopping-list-x-button{
-	float: right;
-}
 .grid3 img{
 	float: left;
 	display: table;
-}
-.float-right{
-	float: right;
-}
-.float-left{
-	float: left;
-}
-.sbs-left{
-	float: left;
-	width: 50%;
-	overflow: hidden;
-}
-.sbs-right{
-	float: left;
-	width: 25%;
-	overflow: hidden;
-
-	margin-right: 25%;
-	padding: 2em;
-	padding-top: 0.5em;
-	background-color: #fffff4;
 }

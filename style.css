@@ -162,6 +162,10 @@ color: white;
 	padding-top: 2em;
 	padding-left: 2em;
 }
+#map{
+	height: 50em;
+	width: 50em;
+}
 .contact{
 	background-color: #c6373a;
 	padding: 0.5em;

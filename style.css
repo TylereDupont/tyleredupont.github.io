@@ -44,6 +44,9 @@ h2 {
 h3 {
 	font-size: 3em;
 }
+h4 {
+	font-size: 2.75em;
+}
 section{
 	padding-bottom: 7.5em;
 }
@@ -77,6 +80,9 @@ ul{
 }
 li {
 	padding-bottom: 1em;
+}
+form{
+	display: inline;
 }
 footer{
 	border: 0;
